@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { ThemeProvider } from "styled-components";
+import styled from "styled-components";
 import theme from "styled-theming";
 import { Provider as ReduxProvider } from "react-redux";
 import DarkThemeProvider from "./DarkThemeProvider";
@@ -19,6 +19,7 @@ export const theme2 = theme("theme", {
 
 const Container = styled.div`
   background-color: ${theme1};
+  color: ${theme2};
   display: flex;
   flex-direction: column;
   width: 100vw;
